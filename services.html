@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Support | Trinity Hall Welfare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="site-title">Trinity Hall Welfare</a>
+    <a href="index.html">Home</a>
+    <a href="team.html">Meet the Team</a>
+    <a href="services.html" class="active">Find Support</a>
+    <a href="links.html">Useful Links</a>
+    <a href="events.html">Events</a>
+</nav>
+
+<div class="page-content">
+    <h1 class="page-title">Find the Right Support</h1>
+    <p class="page-subtitle">Click what feels right. No forms, no pressure. All services are free and confidential.</p>
+
+    <!-- QUICK ACCESS BUTTONS -->
+    <div class="quick-access">
+        <button class="quick-btn" data-filter="mental">Low mood / anxiety</button>
+        <button class="quick-btn" data-filter="halls">Halls issues</button>
+        <button class="quick-btn" data-filter="academic">Academic stress</button>
+        <button class="quick-btn" data-filter="peer">Talk to a peer</button>
+        <button class="quick-btn" data-filter="money">Money worries</button>
+        <button class="quick-btn" data-filter="crisis">Crisis / urgent</button>
+        <button class="quick-btn" data-filter="all">Show all</button>
+    </div>
+
+    <!-- PREFERENCE FILTERS -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="counselling">Counselling</button>
+        <button class="filter-btn" data-filter="peer">Peer / student</button>
+        <button class="filter-btn" data-filter="gender-woman">Prefer woman</button>
+        <button class="filter-btn" data-filter="gender-man">Prefer man</button>
+        <button class="filter-btn" data-filter="young">Prefer someone young</button>
+        <button class="filter-btn" data-filter="crisis">Crisis</button>
+    </div>
+
+    <!-- SERVICE CARDS -->
+    <div class="services-grid" id="servicesGrid">
+
+        <!-- CRISIS -->
+        <div class="service-card crisis" data-tags="crisis">
+            <h3>🚨 Immediate Crisis</h3>
+            <p class="desc">In danger or need urgent help right now.</p>
+            <div class="contact">999 / 112 | Campus Security: ext. 1515</div>
+            <p>Text HELLO to 50808 (24/7 anonymous).</p>
+        </div>
+
+        <!-- STUDENT COUNSELLING -->
+        <div class="service-card" data-tags="mental,counselling,gender-woman,gender-man">
+            <h3>Student Counselling</h3>
+            <span class="badge">Can request man or woman</span>
+            <p class="desc">Low mood, anxiety, stress, relationships. Free 45-min sessions, online or in-person.</p>
+            <div class="contact">student-counselling@tcd.ie | +353 1 896 1407</div>
+            <p>3rd Floor, 7-9 South Leinster St. Just say you're a first-year in Halls.</p>
+        </div>
+
+        <!-- COLLEGE HEALTH -->
+        <div class="service-card" data-tags="mental,health,gender-woman,gender-man">
+            <h3>College Health</h3>
+            <span class="badge">GP + mental health referrals</span>
+            <p class="desc">GP support, mental health care, psychiatry referrals, sexual health.</p>
+            <div class="contact"><a href="https://www.tcd.ie/collegehealth/" target="_blank">tcd.ie/collegehealth</a></div>
+        </div>
+
+        <!-- JCR WELFARE -->
+        <div class="service-card" data-tags="halls,peer,mental,young">
+            <h3>Trinity Hall JCR Welfare</h3>
+            <span class="badge">Your peers in Halls</span>
+            <p class="desc">Halls issues, settling in, mental health chats. Drop-ins available — we live here too.</p>
+            <div class="contact">welfare@trinityhalljcr.com</div>
+            <p><a href="team.html">Meet the team →</a></p>
+        </div>
+
+        <!-- TCDSU WELFARE -->
+        <div class="service-card" data-tags="peer,mental,money,young">
+            <h3>TCDSU Welfare Officer</h3>
+            <span class="badge">Student officer</span>
+            <p class="desc">Any issue—mental health, money, uni life. Friendly listening ear and practical advice.</p>
+            <div class="contact">welfare@tcdsu.org | 01 646 8437</div>
+        </div>
+
+        <!-- CHAPLAINCY -->
+        <div class="service-card" data-tags="mental,peer,gender-man">
+            <h3>Chaplaincy</h3>
+            <span class="badge">Any faith or none welcome</span>
+            <p class="desc">Listening support, spiritual or completely non-religious. Warm, confidential chats.</p>
+            <div class="contact">Phone: 01 896 1260</div>
+        </div>
+
+        <!-- NITELINE -->
+        <div class="service-card" data-tags="peer,crisis,mental,young">
+            <h3>Niteline</h3>
+            <span class="badge">Students for students</span>
+            <p class="desc">After-hours listening line run by students, for students. Term time only.</p>
+            <div class="contact">Freephone: 1800 793 793 (9pm–2:30am)</div>
+        </div>
+
+        <!-- CRISIS TEXT -->
+        <div class="service-card" data-tags="crisis,mental">
+            <h3>Crisis Text Line</h3>
+            <span class="badge">24/7 anonymous</span>
+            <p class="desc">Free, anonymous text-based crisis support. Available any time of day or night.</p>
+            <div class="contact">Text HELLO to 50808</div>
+        </div>
+
+        <!-- SAMARITANS -->
+        <div class="service-card" data-tags="crisis,mental,gender-woman,gender-man">
+            <h3>Samaritans</h3>
+            <span class="badge">24/7 phone support</span>
+            <p class="desc">Always available, whatever you're going through. No judgement, completely confidential.</p>
+            <div class="contact">Call 116 123 (free, 24/7)</div>
+        </div>
+
+        <!-- SENIOR TUTOR -->
+        <div class="service-card" data-tags="academic,mental">
+            <h3>Senior Tutor</h3>
+            <span class="badge">Academic + personal</span>
+            <p class="desc">Extensions, academic difficulties, personal circumstances affecting your studies.</p>
+            <div class="contact">stosec@tcd.ie | +353 1 896 2551</div>
+        </div>
+
+        <!-- TRINITY HALL TEAM -->
+        <div class="service-card" data-tags="halls,money">
+            <h3>Trinity Hall Team</h3>
+            <span class="badge">Accommodation</span>
+            <p class="desc">Room issues, bills, noise complaints, warden support.</p>
+            <div class="contact">trinity.hall@tcd.ie | +353 1 896 8024</div>
+        </div>
+
+        <!-- STUDENT2STUDENT -->
+        <div class="service-card" data-tags="peer,academic,young">
+            <h3>Student2Student</h3>
+            <span class="badge">Peer mentors</span>
+            <p class="desc">Course mentors, help settling in, social events for first-years.</p>
+            <div class="contact">student2student@tcd.ie</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>Trinity Hall JCR Welfare | Not a substitute for professional help | <strong>Crisis: 999 or text HELLO to 50808</strong></p>
+</footer>
+
+<script>
+    const quickBtns = document.querySelectorAll('.quick-btn');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.service-card');
+
+    quickBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            quickBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterCards([btn.dataset.filter]);
+        });
+    });
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterCards([btn.dataset.filter]);
+        });
+    });
+
+    function filterCards(filters) {
+        cards.forEach(card => {
+            card.classList.remove('hidden', 'highlight');
+            const tags = card.dataset.tags.split(',');
+            let show = filters.includes('all');
+            filters.forEach(f => { if (tags.includes(f)) show = true; });
+            if (!show) card.classList.add('hidden');
+            else if (filters.some(f => f.startsWith('gender-') && tags.includes(f))) {
+                card.classList.add('highlight');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
