@@ -2,7 +2,7 @@
 
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 30%, #fde68a 60%, #fca5a5 100%);
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
     color: #92400e;
     line-height: 1.6;
     min-height: 100vh;
