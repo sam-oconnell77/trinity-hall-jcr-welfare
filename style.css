@@ -227,7 +227,7 @@ footer { background: rgba(204, 0, 0, 0.9); color: white; text-align: center; pad
 }
 
 .faq-question::after {
-    content: '+';
+    content: '▼';
     font-size: 1.4rem;
     color: #e07b30;
 }
@@ -237,7 +237,7 @@ footer { background: rgba(204, 0, 0, 0.9); color: white; text-align: center; pad
 }
 
 .faq-question.open::after {
-    content: '−';
+    content: '▲';
 }
 
 .faq-question:hover {
@@ -259,3 +259,15 @@ footer { background: rgba(204, 0, 0, 0.9); color: white; text-align: center; pad
 .faq-answer a {
     color: #e07b30;
 }
+.restock-btn {
+    display: inline-block;
+    background: #dc2626;
+    color: white;
+    font-weight: 700;
+    padding: 0.9rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+.restock-btn:hover { background: #b91c1c; transform: scale(1.05); }
