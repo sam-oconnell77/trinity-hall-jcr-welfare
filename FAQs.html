@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welfare FAQs | Trinity Hall JCR Welfare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR (copy exactly from your other pages) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🧡 Trinity Hall Welfare</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="FAQs.html" class="active">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <h1>Welfare FAQs</h1>
+        <p>Answers to common questions about welfare, health, and support in Trinity Hall.</p>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question">Where can I get condoms?</button>
+                <div class="faq-answer">
+                    <p>Condoms are available directly from your Welfare Officer, contactable by email, and at the top of all apartment blocks in a little basket. All condoms are freely provided.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I get a free pregnancy test?</button>
+                <div class="faq-answer">
+                    <p>Yes, absolutely. You can get a free pregnancy test from your Welfare Officer. You can email them or send them a message on Instagram. Alternatively, you can contact the welfare representative for your house and they will help</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">I'm struggling — can I talk to someone?</button>
+                <div class="faq-answer">
+                    <p>Your Welfare Officer is trained in active listening and confidentiality and is willing and able to listen to anyone who is having a problem. They hold weekly office hours or you can send a message to arrange a chat. There is no problem too big or too small. For other options, you can check out the services or links tabs at the top of this page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What if I don't want to get help from someone my age?</button>
+                <div class="faq-answer">
+                    <p>That's completely understandable! Every house in Hall is assigned a Welfare Team member — trained second years officially known as "Welfairys" — who are here to support you. You can contact the one assigned to your house, or any one you'd feel comfortable with. There are also great support facilities available on campus through college staff.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I make a GP appointment?</button>
+                <div class="faq-answer">
+                    <p>You can make a free GP appointment by ringing the College Health Services on <strong>+353 1 896 1591</strong>. Free drop-in appointments are also available Monday to Friday at <strong>9:30am and 2pm</strong> — these are often busy, so aim to queue at least 30 minutes early. All appointments take place in the College Health Services.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I access counselling?</button>
+                <div class="faq-answer">
+                    <p>Contact <strong>TCD Counselling Services</strong> on <strong>01 896 1497</strong>. Counselling is free, confidential, and non-judgemental for all Trinity students — have your student number ready when you call. Drop-in appointments run at <strong>1pm and 1:30pm</strong> term time at the Counselling Services on Nassau Street. Weekly counselling appointments are also available in Halls — ask about availability when booking.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How do I get an STI check?</button>
+                <div class="faq-answer">
+                    <p>The College Health Services offer two clinics every <strong>Wednesday (9:30–11:30am and 1:30–3:30pm)</strong>:</p>
+                    <ul>
+                        <li><strong>Mini Screen with a Nurse</strong> — for those without symptoms; tests for HIV, Hepatitis B, Syphilis, Chlamydia, and Gonorrhoea.</li>
+                        <li><strong>Sexual Health Clinic with Doctor & Nurse</strong> — more detailed; suitable for those with symptoms, men who have sex with men, or those at higher risk.</li>
+                    </ul>
+                    <p>Book via the Health Centre reception. A €20 deposit is required (€5 refunded when you attend; 48hrs notice needed to cancel).</p>
+                    <p>Other Dublin options:</p>
+                    <ul>
+                        <li><strong>Gay Men's Health Service</strong>, Baggot Street Hospital — free, walk-in Tuesday & Wednesday evenings from 4:30pm. <a href="https://www.gmhs.ie" target="_blank">gmhs.ie</a></li>
+                        <li><strong>GUIDE Clinic</strong>, St James's Hospital — free, walk-in Monday from 9am & Tuesday/Thursday from 1:30pm. <a href="https://www.guideclinic.ie" target="_blank">guideclinic.ie</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER (copy from your other pages) -->
+    <footer class="footer">
+        <p>Trinity Hall JCR Welfare &copy; 2025 | Made with 🧡 for the residents of Trinity Hall</p>
+    </footer>
+
+    <script>
+        // Accordion toggle for FAQs
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                document.querySelectorAll('.faq-question').forEach(b => b.classList.remove('open'));
+                if (!isOpen) {
+                    answer.style.display = 'block';
+                    button.classList.add('open');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
